@@ -1,0 +1,36 @@
+<div class="container">
+  <h2><br><br></h2>
+  <h2>Contact Form</h2>
+  <form class="form-horizontal" id="contact-form" method="POST" action="email.php" (ngSubmit)="onSubmit()" #tkdForm="ngForm">
+    <div class="control-group">
+      <label class="control-label" for="name">Name</label>
+      <div class="controls">
+        <input type="text" name="name" id="name" placeholder="Name"
+                [(ngModel)]="message.name" ngModel name="name" #tkdForm.name="ngModel"
+                class="form-control input-lg" required aria-required=”true”>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="email">Email</label>
+      <div class="controls">
+        <input type="email" name="email" id="email" placeholder="Email"
+                [(ngModel)]="message.email" ngModel name="email" #tkdForm.email="ngModel"
+                class="form-control input-lg" required aria-required=”true”>
+      </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="message">Message</label>
+        <div class="controls">
+          <textarea name="message" id="message" rows="6" class="form-control input-lg" required
+                    [(ngModel)]="message.message" ngModel name="message" #tkdForm.message="ngModel"
+                    aria-required=”true”>
+          </textarea>
+        </div>
+    </div>
+    <br><br>
+    <div class="form-actions" [hidden]="!tkdForm.form.valid">
+      <button type="submit" class="btn btn-default btn-lg btn-block">SUBMIT</button>
+    </div>
+  </form>
+  <h1><br><br></h1>
+</div>

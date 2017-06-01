@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-md-12 text-center">
+    <h2 style="margin-top: 100px;">Meticulously crafted & built to last.</h2>
+    <p class="sub-head">Surface Book is the product of an innovative and careful design process. The result: a device thin and light enough to take anywhere without losing an ounce of performance.</p>
+  </div>
+  <div *ngFor="let product of products">
+    <div class="col-md-4">
+     <div class="card">
+        <img src="./app/product/images/{{product.image}}" class="img-responsive"/>
+        <h3>{{product.name}}<span>{{product.price}}</span></h3>
+        <p>{{product.mode}}</p>
+     </div>
+     <p class="desc">{{product.desc}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container-fluid repeater">
+  <div class="container">
+      <ul class="col-md-4">
+        <li *ngFor="let person of people" (click)="setThis(person)">
+          <span><i class="fa fa-cog" aria-hidden="true"></i></span>
+          <p>{{ person.name }}</p>
+        </li>
+      </ul>
+       <div *ngIf="currentStatus" class="col-md-8 right-section">
+          <h2>{{ currentStatus.name }}</h2>
+          <h4>{{currentStatus.place}}</h4>
+          <img [src]="currentStatus.img" class="img-responsive"/>
+         <p>{{currentStatus.para}}</p>
+         <a href="{{currentStatus.href}}" class="btn btn-default" target="_blank">Read More</a>
+         <a href="" class="btn btn-primary" data-toggle="modal" data-target="#myModal">modal</a>
+         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img [src]="currentStatus.img" class="img-responsive"/>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  </div>
+</div>

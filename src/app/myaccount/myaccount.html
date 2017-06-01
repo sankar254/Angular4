@@ -1,0 +1,53 @@
+<div class="my-account-form">
+  <div class="container">
+    <h2>Angular Login Form</h2>
+    <div class="col-md-6">
+      <!--<img src="../../assets/gravatar.png" class="img-responsive gravatar"/>-->
+      <div [hidden]="submitted">
+        <h1>Sign up</h1>
+        <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Name is required</div>
+          </div>
+          <div class="form-group">
+            <label for="Email">email</label>
+            <input type="text" class="form-control" id="Email" [(ngModel)]="model.Email" name="Email" email>
+          </div>
+          <div class="form-group">
+            <label for="power">Hero Power</label>
+            <select class="form-control" id="power" required [(ngModel)]="model.power" name="power" #power="ngModel">
+              <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+            </select>
+            <div [hidden]="power.valid || power.pristine" class="alert alert-danger">Power is required</div>
+          </div>
+          <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+          <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
+        </form>
+        <p style="margin-top:30px;"><b>Entries:</b> " {{model.name}} "; &nbsp;" {{ model.Email }} ";&nbsp;" {{model.power}} ".</p>
+      </div>
+      <div [hidden]="!submitted">
+        <h2>You submitted the following:</h2>
+        <div class="row"><div class="col-xs-3">Name</div><div class="col-xs-9 pull-left">{{ model.name }}</div></div>
+        <div class="row"><div class="col-xs-3">Email</div><div class="col-xs-9 pull-left">{{ model.Email }}</div></div>
+        <div class="row"><div class="col-xs-3">Power</div><div class="col-xs-9 pull-left">{{ model.power }}</div></div>
+        <br>
+        <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+      </div>
+    </div>
+    <div class="col-md-6 aside">
+      <ul>
+        <li><img src="assets/JkSed.png" /></li>
+        <p><span>or</span></p>
+        <li><img src="assets/pZzc4.png" /></li>
+        <div class="just">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer orci eros, sodales vitae nisl id, iaculis <a href="#">ultricies ipsum</a>. Praesent quis lobortis justo. In hac habitasse platea dictumst.</div>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="col-md-12 text-center quote">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer orci eros, sodales vitae nisl id, iaculis <a href="#">ultricies ipsum</a>.<br> Praesent quis lobortis justo. In hac habitasse platea dictumst.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,167 @@
+body{
+  font-family: 'Roboto', sans-serif!important;
+}
+content{
+  display: block;
+}
+.main{
+  background-color: #e7f2ec;
+  padding:50px 0px;
+}
+h2,h3{
+  color:#2e4560!important;
+}
+
+.main .btn-default{
+  margin-top:50px;
+}
+.main .col-md-12 p{
+  margin-top:100px;
+  font-size:24px;
+}
+.main .col-md-12 h2{
+  font-size:42px;
+  line-height:48px!important;
+  margin-bottom:36px;
+  font-weight: 400;
+}
+menu{
+  padding:0;
+}
+.navbar {
+  margin-bottom: 0px!important;
+}
+.main .col-md-3{
+  border-right: 2px solid rgba(204, 204, 204, 0.45);
+}
+.main .col-md-3:last-child{
+  border:0;
+}
+.main .col-md-3 img{
+  height:55px;
+}
+.main .container:nth-child(2){
+  margin-top:70px;
+}
+footer {
+  margin-top:50px;
+}
+footer .container-fluid.wrapper{
+  background-color: #e7f2ec;
+  padding:50px;
+}
+footer .container-fluid.wrapper a{
+  color:#000;
+}
+footer .container-fluid.wrapper a:hover{
+  text-decoration:none;
+}
+footer .container-fluid.wrapper h3{
+  margin:0;
+}
+.last-wrap{
+  background-color: #c23007;
+  padding:13px;
+}
+.last-wrap .col-md-3{
+  width:20%!important;
+}
+.last-wrap .col-md-3 p{
+  color:#fff;
+  margin-bottom:0px;
+  margin-top:5px;
+}
+.last-wrap .col-md-3 .logo{
+  font-size:24px;
+  margin:0px;
+}
+.card{
+  border: 10px solid #fbfbfb;
+  box-shadow: 0px 3px 15px -6px #000;
+  margin-top:50px;
+}
+.card h3 span{
+  float: right;
+  font-size: 15px;
+  font-weight: 400;
+}
+.desc{
+  font-size: 15px;
+  color: #565656;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+product h2{
+  margin-top: 100px;
+  font-size: 38px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.sub-head{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 20px 0px 10px;
+}
+ .my-account-form{
+   margin-top:5%;
+ }
+  .my-account-form h1{
+    font-weight:300;
+    margin-top:14%;
+  }
+ .my-account-form h2{
+   text-align: center;
+   font-weight: 400;
+   margin-bottom: 0px;
+ }
+ .my-account-form .gravatar{
+   margin:0 auto;
+ }
+.my-account-form .aside{
+  margin-top:3%;
+}
+ .my-account-form .aside p{
+   text-align: center;
+   position: relative;
+   border-top: 1px solid #ccc;
+   margin: 40px;
+ }
+ .my-account-form .aside span{
+   background:#ccc;
+   border-radius: 50px;
+   position:absolute;
+   top:-15px;
+   padding: 6px 10px;
+ }
+  .my-account-form .aside ul{
+    margin: 15% 10%;
+    text-align: center;
+    border-left: 1px solid rgba(204, 204, 204, 0.26);
+  }
+  .my-account-form .aside ul li{
+    list-style-type: none;
+  }
+  .just{
+    margin-top: 2%;
+    color: #ccc;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .just a{
+    color:#59ad1c
+  }
+  .quote{
+    padding: 40px 0px 20px;
+    border-top: 1px solid rgba(204, 204, 204, 0.45);
+    margin-top: 50px;
+  }
+  .modal-backdrop.in{
+    opacity:0.8!important;
+  }
+  .navbar-nav>.active>a{
+    border-bottom:2px solid #000;
+    background-color:#f8f8f8!important;
+  }
